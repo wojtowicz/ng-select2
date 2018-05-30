@@ -13,7 +13,11 @@
     "@angular/router": "^6.0.0",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "@types/jquery": "^3.2.x",
+    "@types/select2": "^4.0.x",
+    "select2": "^4.0.x",
+    "jquery": "^3.2.x"
   },
   "scripts": {
     "ng": "ng",
@@ -22,7 +26,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "packagr": "ng-packagr -p projects/ng-select2/ng-package.json"
+    "packagr": "ng-packagr -p projects/ng-select2/ng-package.json",
+    "packagr-prod": "ng-packagr -p projects/ng-select2/ng-package.prod.json"
   },
   "private": true,
   "devDependencies": {

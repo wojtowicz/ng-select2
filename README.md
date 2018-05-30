@@ -22,11 +22,11 @@ Now include their scrpits and styles in your `angularcli.json` file
 ```
 "styles": [
   "styles.css",
-  "../node_modules/select2/dist/css/select2.min.css"
+  "node_modules/select2/dist/css/select2.min.css"
 ],
 "scripts": [
-  "../node_modules/jquery/dist/jquery.js",
-  "../node_modules/select2/dist/js/select2.min.js"
+  "node_modules/jquery/dist/jquery.js",
+  "node_modules/select2/dist/js/select2.min.js"
 ],
 ```
 
