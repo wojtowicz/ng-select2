@@ -21,5 +21,8 @@
         "projects/ng-select2/src/public_api.ts"
       ]
     }
+  },
+  "angularCompilerOptions": {
+    "enableIvy": true
   }
 }
