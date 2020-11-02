@@ -50,6 +50,7 @@ export class NgSelect2Component implements AfterViewInit, OnChanges, OnDestroy, 
 
 
   @Input() allowClear = false;
+  @Input() closeOnClear = true;
 
   // value for select2
   @Input() value: string | string[];
@@ -153,6 +154,16 @@ export class NgSelect2Component implements AfterViewInit, OnChanges, OnDestroy, 
       this.valueChanged.emit(newValue);
       this.propagateChange(newValue);
     });
+
+    if (!this.closeOnClear) {
+      this.element.on('select2:clear', function (clearEvent) {
+        $(this).on('select2:opening.cancelOpen', function (cancelEvent) {
+          cancelEvent.preventDefault();
+
+          $(this).off('select2:opening.cancelOpen');
+        });
+      });
+    }
   }
 
   ngOnDestroy() {

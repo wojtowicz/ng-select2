@@ -75,6 +75,7 @@ import { NgSelect2Module } from 'ng-select2';
 * **width** `string`: Set width for the input, default value is `resolve`
 * **disabled** `boolean`: Disable select2, default value is `false`
 * **allowClear** `boolean`:  	Provides support for [clearable selections](https://select2.org/selections#clearable-selections), default value is `false`
+* **closeOnClear** `boolean`: Allows you to not open dropdown on clear, default value is `false`
 * **placeholder** `string`: Placeholder for select2
 * **options** `Options`: Set options for select2, [all available options](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/4869992bc079b88280b9ff91213528904109e8ae/select2/index.d.ts#L40) for select2
 
